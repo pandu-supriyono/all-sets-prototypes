@@ -28,6 +28,13 @@ const Home: NextPage = () => {
               <p>Basic journal entry with emphasis on the satisfaction slider</p>
             </a>
           </Link>
+
+          <Link passHref href="/slider-2">
+            <a className={styles.card}>
+              <h2>Journal entry question 2 &rarr;</h2>
+              <p>Iteration on slider 1 with more control over slider and thinner container</p>
+            </a>
+          </Link>
         </div>
       </main>
     </div>
