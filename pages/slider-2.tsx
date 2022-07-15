@@ -75,7 +75,7 @@ export const SliderPrototype2Page: NextPage = () => {
                 min="0"
                 max="100"
                 value={values[0]}
-                onChange={(e) => setValues(() => [parseInt(e.target.value)])}
+                onChange={(e) => setValues(() => [Math.min(parseInt(e.target.value), 100)])}
                 onFocus={() => setValueIndicatorIsFocused(true)}
                 onBlur={() => setValueIndicatorIsFocused(false)}
               />
